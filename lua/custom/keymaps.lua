@@ -1,5 +1,3 @@
--- #Neotree toggle
-vim.keymap.set('n', '<leader>e', '<CMD>Neotree toggle=true<CR>', { desc = 'Toggle Neotree' })
 -- #Navigate buffers
 -- ##Focus next buffer
 vim.keymap.set('n', 'L', '<CMD>bn<CR>', { desc = 'Toggle Neotree' })
