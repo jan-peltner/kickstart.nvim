@@ -204,6 +204,8 @@ require('lazy').setup({
         ['<leader>h'] = { name = 'Git [H]unk', _ = 'which_key_ignore' },
         ['<leader>b'] = { name = '[B]uffer', _ = 'which_key_ignore' },
         ['<leader>n'] = { name = '[N]ew Buffer', _ = 'which_key_ignore' },
+        ['<leader>g'] = { name = 'Neo[g]it', _ = 'which_key_ignore' },
+        ['<leader>e'] = { name = 'Neo[t]ree', _ = 'which_key_ignore' },
       }
       -- visual mode
       require('which-key').register({
@@ -694,13 +696,13 @@ require('lazy').setup({
     -- change the command in the config to whatever the name of that colorscheme is.
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    'shatur/neovim-ayu',
+    'catppuccin/nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'ayu-mirage'
+      vim.cmd.colorscheme 'catppuccin-mocha'
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
     end,
